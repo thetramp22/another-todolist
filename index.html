@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <script src="js/main.js" type="module"></script>
     <title>To Do List</title>
   </head>
   <body>
@@ -31,7 +39,7 @@
       </section>
       <section class="listContainer">
         <div class="listTitle">
-          <h1>To Do List</h1>
+          <h1 tabindex="0">To Do List</h1>
           <button
             id="clearItems"
             class="button"
@@ -56,6 +64,7 @@
             <input type="checkbox" id="3" tabindex="0" />
             <label for="3">code</label>
           </div>
+          <p id="confirmation" class="confirmation" aria-live="assertive"></p>
         </div>
       </section>
     </main>
